@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    max-width: 800px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #333;
+    background-color: white;
+}
+
+p, h1 {   
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    margin: 0px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+span {
+    font-weight: light;
+    font-size: small;
+}
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github span {
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.github span:hover {
+    color: cadetblue;
+}
+
+.github img {
+    width: 20px;
+}
