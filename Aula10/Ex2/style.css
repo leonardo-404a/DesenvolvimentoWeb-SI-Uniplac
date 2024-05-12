@@ -1,0 +1,9 @@
+#area {
+    width: 50%;
+    height: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}

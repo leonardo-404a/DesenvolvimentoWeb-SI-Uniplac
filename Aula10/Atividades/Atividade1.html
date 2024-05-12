@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            display: block;
+            cursor: pointer;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        #bola-1 {
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        #bola-2 {
+            background-color: green;
+            border-radius: 50%;
+        }
+
+        #bola-3 {
+            background-color: blue;
+            border-radius: 50%;
+        }
+
+        #area {
+            width: 90%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="bola-1" class="bola"></div>
+    <div id="bola-2" class="bola"></div>
+    <div id="bola-3" class="bola"></div>
+
+    <div id="area"></div>
+
+    <script>
+        const bola1 = document.querySelector('#bola-1');
+        const bola2 = document.querySelector('#bola-2');
+        const bola3 = document.querySelector('#bola-3');
+        const area = document.querySelector('#area');
+
+        bola1.addEventListener('click', () => {
+            area.style.backgroundColor = 'red';
+        });
+
+        bola2.addEventListener('click', () => {
+            area.style.backgroundColor = 'green';
+        });
+
+        bola3.addEventListener('click', () => {
+            area.style.backgroundColor = 'blue';
+        });
+
+    </script>
+</body>
+</html>
+
+<!-- Após, monte a árvore DOM deste website. -->
+<!-- 
+    - html
+        - head
+            - meta
+            - meta
+            - title
+            - style
+        - body
+            - div#bola-1.bola
+            - div#bola-2.bola
+            - div#bola-3.bola
+            - div#area
+            - script
+            
+ -->

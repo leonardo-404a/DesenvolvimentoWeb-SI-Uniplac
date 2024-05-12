@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01 - DOM</title>
+</head>
+<body>
+    <h1 id="T1">Iniciando com os estudos DOM!</h1>
+    <p>Aqui vai o resultado!</p>
+    <p class="para">Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Uma mensagem</div>
+    <hr>
+
+    <script>
+        const msg = document.getElementById('msg');
+        const p1 = document.getElementsByTagName('p')[0];
+        const p2 = document.querySelector('p.para');
+
+        p1.style.color = 'blue';
+        msg.style.backgroundColor = 'yellow';
+    </script>
+</body>
+</html>

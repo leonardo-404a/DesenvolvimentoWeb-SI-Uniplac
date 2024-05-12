@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>DOM 2</title>
+</head>
+<body>
+    <div id="area">
+        Interaja!
+    </div>
+
+    <script>
+        const area = document.getElementById('area');
+        let stop = true;
+
+        area.addEventListener('mouseenter', () => {
+            area.innerText = 'Entrou!'
+        });
+
+        area.addEventListener('mouseout', () => {
+            area.innerText = 'Saiu!'
+        });
+
+        area.addEventListener('click', () => {
+            area.innerText = 'Clicou!'
+
+            stop = !stop; 
+
+            setInterval(() => {
+                if (!stop){   
+                    const colors = ['blue', 'red', 'green', 'yellow', 'black', 'purple', 'orange', 'pink', 'brown', 'gray'];
+                    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                    area.style.backgroundColor = randomColor;
+
+                    const sizes = ['10px', '12px', '14px', '16px', '18px', '20px', '22px', '24px', '26px', '28px'];
+                    const randomSize = sizes[Math.floor(Math.random() * sizes.length)];
+                    area.style.fontSize = randomSize;
+                    
+                    const fonts = ['Arial', 'Verdana', 'Tahoma', 'Times New Roman', 'Georgia', 'Courier New', 'Lucida Console', 'Impact', 'Comic Sans MS', 'Trebuchet MS'];
+                    const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
+                    area.style.fontFamily = randomFont;
+                    
+                    const fontWeights = ['100', '200', '300', '400', '500', '600', '700', '800', '900'];
+                    const randomFontWeight = fontWeights[Math.floor(Math.random() * fontWeights.length)];
+                    area.style.fontWeight = randomFontWeight;
+                }
+            }, 0.01);
+            
+        });
+    </script>
+</body>
+</html>
