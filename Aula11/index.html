@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - Forms</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form>
+        <fieldset>
+            <legend>Formulário de Contato:</legend>
+            <label for="nameInput">Nome:</label>
+            <input #nameInput type="text"/>
+            <br/>
+
+            <label for="citySelect">Cidade:</label>
+            <select #citySelect>
+                <option>Lages</option>
+                <option>Florianópolis</option>
+                <option>Joinville</option>
+            </select>
+            <br/>
+
+            <label for="messageTextArea">Mensagem:</label>
+            <textarea #messageTextArea></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Campos Input</legend>
+            
+            <label for="gender">Sexo:</label>
+            <input #genderMan name="gender" type="radio"> <label for="genderMan">Masculino</label>
+            <input #genderWoman name="gender" type="radio"> <label for="genderWoman">Feminino</label>
+            <br/>
+
+            <label for="programmingLanguage">Linguagem de Programação:</label>
+            <input #programmingLanguage type="checkbox">
+            <label for="programmingLanguage">JavaScript</label>
+
+            <input #programmingLanguage type="checkbox">
+            <label for="programmingLanguage">Java</label>
+
+            <input #programmingLanguage type="checkbox">
+            <label for="programmingLanguage">C#</label>
+
+            <input #programmingLanguage type="checkbox">
+            <label for="programmingLanguage">C++</label>
+            
+            <br/>
+
+            <label for="birthDateInput">Data de Nascimento:</label>
+            <input #birthDateInput type="date">
+            <br/>
+
+            <label for="ageInput">Idade:</label>
+            <input #ageInput type="number" min="0">
+            <br/>
+
+            <label for="numberPhone">Telefone:</label>
+            <input #numberPhone type="tel">
+            <br/>
+
+            <label for="emailInput">E-mail:</label>
+            <input #emailInput type="email">
+            <br/>
+
+            <label for="passwordInput">Senha:</label>
+            <input #passwordInput type="password">
+            <br/>
+
+            <label for="urlInput">URL:</label>
+            <input #urlInput type="url">
+            <br/>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
