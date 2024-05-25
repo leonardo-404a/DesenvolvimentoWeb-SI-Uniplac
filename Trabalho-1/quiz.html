@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/quiz.js"></script>
+</head>
+<body>
+    <div class="container-body">
+        <header>
+            <h1>Quiz Desenvolvimento Web</h1>
+        </header>
+        <main>
+            <container id="question-container">
+            </container>
+            
+            <button id="quizButton" onclick="finalizeQuiz()">Verificar respostas</button>
+        </main>
+    </div>
+
+    <script>createQuestions();</script>
+</body>
+</html>
+

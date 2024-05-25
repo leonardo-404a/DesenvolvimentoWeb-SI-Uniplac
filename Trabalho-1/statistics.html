@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas | Quiz</title>
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/statistics.js"></script>
+</head>
+<body>
+    <div class="container-body">
+        <header>
+            <h1>Quiz Desenvolvimento Web</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Estatísticas</h2>
+                <p>Veja como você se saiu no quiz de Desenvolvimento Web.</p>
+                <p>Quantidade de questões: <span id="total-questions"></span></p>
+                <p>Quantidade de acertos: <span id="correct-answers"></span></p>
+                <p>Desempenho: <span id="performance"></span></p>
+                <p>Feedback: <span id="feedback"></span></p>
+
+                <h2 id="toggle-header">Visualizar respostas<span id="toggle-icon">+</span></h2>
+                <div id="questions-container" class="minimized"></div>
+            </section>
+            
+            <section>
+            </section>
+        </main>
+    </div>
+
+    
+    <script>
+        document.getElementById('toggle-header').addEventListener('click', function() {
+            var container = document.getElementById('questions-container');
+            var icon = document.getElementById('toggle-icon');
+            if (container.classList.contains('minimized')) {
+                container.classList.remove('minimized');
+                container.classList.add('expanded');
+                icon.textContent = '-';
+            } else {
+                container.classList.remove('expanded');
+                container.classList.add('minimized');
+                icon.textContent = '+';
+            }
+        });
+
+        generateStatistics();
+    </script>
+</body>
+</html>
